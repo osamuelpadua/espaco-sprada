@@ -139,13 +139,21 @@
 
         <!-- Divisor -->
         <div class="trat-divider" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 4C16 4 13 9 13 13C13 14.657 14.343 16 16 16C17.657 16 19 14.657 19 13C19 9 16 4 16 4Z" fill="currentColor"/>
-            <path d="M8 9C8 9 5 13 5 16C5 17.657 6.343 19 8 19C9.657 19 11 17.657 11 16C11 13 9 10.5 8 9Z" fill="currentColor"/>
-            <path d="M24 9C24 9 27 13 27 16C27 17.657 25.657 19 24 19C22.343 19 21 17.657 21 16C21 13 23 10.5 24 9Z" fill="currentColor"/>
-            <path d="M16 16C16 16 13 20 13 22.5C13 24.433 14.343 26 16 26C17.657 26 19 24.433 19 22.5C19 20 16 16 16 16Z" fill="currentColor"/>
-            <path d="M11 16C11 16 8.5 18.5 7 18.5C5.5 18.5 4.5 17.5 5 16.5C5.5 15.5 8 14.5 11 16Z" fill="currentColor" opacity="0.5"/>
-            <path d="M21 16C21 16 23.5 18.5 25 18.5C26.5 18.5 27.5 17.5 27 16.5C26.5 15.5 24 14.5 21 16Z" fill="currentColor" opacity="0.5"/>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Pétala central -->
+            <path d="M12 15.5C12 15.5 9 11.5 9 8.5C9 6.57 10.343 5 12 5C13.657 5 15 6.57 15 8.5C15 11.5 12 15.5 12 15.5Z" fill="currentColor"/>
+            <!-- Pétala esquerda -->
+            <path d="M8.5 14C8.5 14 6 11 6 8.5C6 7.12 7.12 6 8.5 6C9.5 6 10.3 6.7 11 8" fill="currentColor" opacity="0.65"/>
+            <!-- Pétala direita -->
+            <path d="M15.5 14C15.5 14 18 11 18 8.5C18 7.12 16.88 6 15.5 6C14.5 6 13.7 6.7 13 8" fill="currentColor" opacity="0.65"/>
+            <!-- Pétala ext. esquerda -->
+            <path d="M5.5 13C5.5 13 3.5 11 3.5 9C3.5 7.9 4.4 7 5.5 7C6.3 7 7 7.5 7.5 8.5" fill="currentColor" opacity="0.35"/>
+            <!-- Pétala ext. direita -->
+            <path d="M18.5 13C18.5 13 20.5 11 20.5 9C20.5 7.9 19.6 7 18.5 7C17.7 7 17 7.5 16.5 8.5" fill="currentColor" opacity="0.35"/>
+            <!-- Taça base -->
+            <path d="M8 16C9 17.2 10.4 18 12 18C13.6 18 15 17.2 16 16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <!-- Caule -->
+            <path d="M12 18V21" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
           </svg>
         </div>
 
@@ -374,39 +382,86 @@
   <section class="contato" id="contato">
     <div class="container">
 
+      <div class="contato-header reveal-item" data-reveal="up">
+        <span class="label">Entre em contato</span>
+        <h2>Pronto para viver mais leve?</h2>
+      </div>
+
       <div class="contato-layout">
 
-        <!-- Coluna esquerda: info + WhatsApp -->
-        <div class="contato-col reveal-item" data-reveal="left">
-          <span class="label">Agende sua sessão</span>
-          <h2>Pronto para viver<br>mais leve?</h2>
+        <!-- Coluna esquerda: cards de info + marca -->
+        <div class="reveal-item" data-reveal="left">
+          <div class="info-cards">
 
-          <dl class="info-list">
-            <div class="info-row">
-              <dt>Endereço</dt>
-              <dd>Rua Santo Antônio, 108 — Barreiros<br>São José/SC · CEP 88117-351</dd>
-            </div>
-            <div class="info-row">
-              <dt>Horário</dt>
-              <dd>Segunda a sexta · 7h às 23h</dd>
-            </div>
-            <div class="info-row">
-              <dt>Instagram</dt>
-              <dd><a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener">@massoterapiaeterapiassprada</a></dd>
-            </div>
-            <div class="info-row">
-              <dt>E-mail</dt>
-              <dd><a href="mailto:spradaterapias@gmail.com">spradaterapias@gmail.com</a></dd>
-            </div>
-          </dl>
+            <a href="https://maps.google.com/?q=Rua+Santo+Antônio,+108,+Barreiros,+São+José,+SC" target="_blank" rel="noopener" class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 13 6 13s6-7.75 6-13c0-3.314-2.686-6-6-6z"/>
+                  <circle cx="12" cy="8" r="2.5"/>
+                </svg>
+              </div>
+              <dl>
+                <dt>Endereço</dt>
+                <dd>Rua Santo Antônio, 108 — Barreiros<br>São José/SC · CEP 88117-351</dd>
+              </dl>
+            </a>
 
-          <div class="contato-wpp">
-            <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20massoterapia." target="_blank" rel="noopener" class="btn btn-white">
-              Massoterapia — WhatsApp
+            <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20massoterapia." target="_blank" rel="noopener" class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <dl>
+                <dt>Massoterapia — Samayne</dt>
+                <dd>(48) 98404-0426</dd>
+              </dl>
             </a>
-            <a href="https://wa.me/5548999026647?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20holística." target="_blank" rel="noopener" class="btn btn-outline">
-              Terapias Holísticas — WhatsApp
+
+            <a href="https://wa.me/5548999026647?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20holística." target="_blank" rel="noopener" class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <dl>
+                <dt>Terapias Holísticas — Jurema</dt>
+                <dd>(48) 99902-6647</dd>
+              </dl>
             </a>
+
+            <a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener" class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M17.5 6.5h.01" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <dl>
+                <dt>Instagram</dt>
+                <dd>@massoterapiaeterapiassprada</dd>
+              </dl>
+            </a>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <dl>
+                <dt>Horário</dt>
+                <dd>Segunda a sexta · 7h às 23h</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <div class="contato-brand">
+            <img src="assets/logo.svg" alt="Espaço Sprada" class="contato-logo">
+            <p>Massoterapia e Terapias Holísticas<br>em São José/SC</p>
           </div>
         </div>
 

@@ -646,147 +646,113 @@ ul { list-style: none; }
 
 /* ── AGENDAMENTO / CONTATO ──────────────────── */
 .contato {
-  background: var(--dark);
+  background: var(--white);
   padding: var(--section-pad);
 }
-.contato-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+.contato-header {
+  text-align: center;
+  margin-bottom: 52px;
 }
-.contato-col .label {
+.contato-header .label {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-  margin-bottom: 16px;
+  color: var(--primary);
+  margin-bottom: 12px;
 }
-.contato-col h2 {
+.contato-header h2 {
   font-family: var(--font-head);
-  font-size: clamp(24px, 2.6vw, 36px);
+  font-size: clamp(26px, 2.8vw, 38px);
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #fff;
-  line-height: 1.2;
-  margin-bottom: 36px;
+  color: var(--dark);
+  line-height: 1.15;
 }
-.info-list {
+.contato-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.info-cards {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.info-card {
+  display: flex;
+  align-items: center;
   gap: 16px;
-  margin-bottom: 40px;
+  padding: 14px 18px;
+  border: 1px solid rgba(30,54,115,0.12);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
-.info-row {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 12px;
-  align-items: baseline;
+a.info-card { cursor: pointer; }
+a.info-card:hover {
+  border-color: rgba(30,54,115,0.28);
+  background: var(--light-blue);
+  box-shadow: var(--shadow);
 }
-.info-row dt {
+.info-card-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background: var(--light-blue);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: background 0.2s;
+}
+a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
+.info-card-icon svg { width: 20px; height: 20px; }
+.info-card dl { flex: 1; min-width: 0; }
+.info-card dt {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.40);
+  color: var(--gray-light);
+  margin-bottom: 3px;
 }
-.info-row dd {
+.info-card dd {
   font-size: 14px;
-  color: rgba(255,255,255,0.80);
-  line-height: 1.6;
+  color: var(--dark);
+  line-height: 1.45;
+  font-weight: 500;
 }
-.info-row dd a {
-  color: rgba(255,255,255,0.80);
-  text-decoration: none;
-}
-.info-row dd a:hover { color: #fff; text-decoration: underline; }
-.contato-wpp {
+.contato-brand {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(30,54,115,0.10);
+}
+.contato-brand .contato-logo { height: 48px; width: auto; }
+.contato-brand p {
+  font-size: 13px;
+  color: var(--gray-light);
+  line-height: 1.5;
 }
 .contato-map {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  height: 440px;
+  height: 520px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(30,54,115,0.08);
 }
 .contato-map iframe {
   width: 100%;
   height: 100%;
-  border: none;
-  display: block;
-}
-.contato-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 56px;
-}
-.agend-card {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: var(--radius-lg);
-  padding: 36px 28px;
-  text-align: center;
-  transition: background 0.3s;
-}
-.agend-card:hover { background: rgba(255,255,255,0.11); }
-.agend-card .agend-icon { font-size: 40px; margin-bottom: 16px; }
-.agend-card h3 {
-  font-family: var(--font-head);
-  font-size: 22px;
-  color: #fff;
-  margin-bottom: 6px;
-}
-.agend-card .agend-sub {
-  font-size: 13px;
-  color: rgba(255,255,255,0.55);
-  margin-bottom: 18px;
-  font-style: italic;
-}
-.agend-card .agend-tel {
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.agend-card .btn { width: 100%; text-align: center; justify-content: center; }
-
-.contato-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-.info-block h4 {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 16px;
-}
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.80);
-}
-.info-item .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
-.info-item a:hover { color: #fff; text-decoration: underline; }
-
-.map-embed {
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.12);
-}
-.map-embed iframe {
-  width: 100%;
-  height: 240px;
   border: none;
   display: block;
 }
@@ -1010,10 +976,8 @@ ul { list-style: none; }
 
   .trat-row { grid-template-columns: 1fr; gap: 32px; padding: 48px 0; }
 
-  .contato-layout { grid-template-columns: 1fr; gap: 40px; }
-  .contato-map { height: 280px; }
-  .contato-grid { grid-template-columns: 1fr; gap: 24px; }
-  .contato-info { grid-template-columns: 1fr; gap: 32px; }
+  .contato-layout { grid-template-columns: 1fr; gap: 32px; }
+  .contato-map { height: 300px; }
 
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
