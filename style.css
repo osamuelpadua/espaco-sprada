@@ -281,6 +281,12 @@ ul { list-style: none; }
   gap: 5px;
   cursor: pointer;
   padding: 4px;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .hamburger span {
   display: block;
