@@ -13,7 +13,7 @@
   --white:      #F8FAFC;
   --beige:      #EFE7DD;
   --gray:       #4B5563;
-  --gray-light: #9CA3AF;
+  --gray-light: #6B7280;
   --border:     #D1D5DB;
 
   --font-head: 'Montserrat', sans-serif;
@@ -344,22 +344,25 @@ ul { list-style: none; }
   letter-spacing: 0.02em;
 }
 
-/* Hamburger flutuante no hero (mobile) */
+/* Hamburger flutuante no hero */
 .hero-ham {
-  display: none;
+  display: flex;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 28px;
   z-index: 50;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 12px;
   background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: none;
   border-radius: 8px;
+  transition: background 0.2s;
 }
+.hero-ham:hover { background: rgba(255,255,255,0.92); }
 .hero-ham span {
   display: block;
   width: 22px;
@@ -773,7 +776,7 @@ a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
 .footer-brand img { height: 40px; filter: brightness(0) invert(1); margin-bottom: 16px; }
 .footer-brand p {
   font-size: 13px;
-  color: rgba(255,255,255,0.50);
+  color: rgba(255,255,255,0.65);
   line-height: 1.7;
   max-width: 280px;
 }
@@ -782,7 +785,7 @@ a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.60);
   margin-bottom: 16px;
 }
 .footer-col ul li {
@@ -790,18 +793,25 @@ a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
 }
 .footer-col ul li a {
   font-size: 13px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.75);
   transition: color 0.2s;
 }
 .footer-col ul li a:hover { color: #fff; }
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-social-link svg { flex-shrink: 0; opacity: 0.85; }
+.footer-social-link:hover svg { opacity: 1; }
 .footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
 }
-.footer-bottom a { color: rgba(255,255,255,0.55); }
+.footer-bottom a { color: rgba(255,255,255,0.70); }
 .footer-bottom a:hover { color: #fff; }
 
 /* ── PÁGINAS INTERNAS (Massoterapia / Holísticas) ── */
@@ -963,7 +973,6 @@ a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
     padding-top: 80px;
     padding-bottom: 56px;
   }
-  .hero-ham { display: flex; }
   .hero-content .logo-mark { height: 64px; margin-bottom: 18px; }
   .hero-content h1 { font-size: clamp(32px, 7vw, 48px); }
   .hero-content .hero-sub { max-width: 100%; }
@@ -1113,7 +1122,7 @@ a.info-card:hover .info-card-icon { background: rgba(30,54,115,0.14); }
   flex-shrink: 0;
 }
 .dep-name  { font-size: 15px; font-weight: 700; color: var(--dark); display: block; }
-.dep-label { font-size: 12px; color: #999; display: block; margin-top: 2px; }
+.dep-label { font-size: 12px; color: #6B7280; display: block; margin-top: 2px; }
 .dep-stars { display: flex; align-items: center; gap: 8px; }
 .dep-stars-icons { color: #FBBC04; font-size: 17px; letter-spacing: 2px; line-height: 1; }
 .dep-badge {
