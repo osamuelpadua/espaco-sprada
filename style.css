@@ -344,25 +344,21 @@ ul { list-style: none; }
   letter-spacing: 0.02em;
 }
 
-/* Hamburger flutuante no hero */
+/* Hamburger no hero — flui com o conteúdo, alinhado à esquerda */
 .hero-ham {
   display: flex;
-  position: absolute;
-  top: 20px;
-  right: 28px;
-  z-index: 50;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 10px 12px;
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 10px;
+  background: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  align-self: flex-start;
+  margin-bottom: 20px;
   transition: background 0.2s;
 }
-.hero-ham:hover { background: rgba(255,255,255,0.92); }
+.hero-ham:hover { background: rgba(30, 54, 115, 0.08); }
 .hero-ham span {
   display: block;
   width: 22px;
