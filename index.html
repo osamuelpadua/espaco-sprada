@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Sprada — Massoterapia e Terapias Holísticas em São José/SC</title>
+  <meta name="description" content="Massoterapia e Terapias Holísticas em São José/SC. Um espaço aconchegante dedicado ao equilíbrio do corpo, mente e espírito. Atendimento de segunda a sexta, das 7h às 23h.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Espaço Sprada — Massoterapia e Terapias Holísticas">
+  <meta property="og:description" content="Massoterapia e Terapias Holísticas em Barreiros, São José/SC. Sessões personalizadas para o bem-estar do corpo, mente e espírito.">
+  <meta property="og:image" content="assets/bg-hero.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/stamp-iso.svg">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Espaço Sprada Massoterapia e Terapias Holísticas",
+    "description": "Espaço dedicado ao bem-estar com massoterapia e terapias holísticas em São José/SC.",
+    "telephone": ["+5548984040426", "+5548999026647"],
+    "email": "spradaterapias@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Santo Antônio, 108",
+      "addressLocality": "Barreiros, São José",
+      "addressRegion": "SC",
+      "postalCode": "88117-351",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 07:00-23:00",
+    "sameAs": [
+      "https://www.instagram.com/massoterapiaeterapiassprada/",
+      "https://www.facebook.com/massoterapiaeterapiasholisticas"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar"></div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMenu()" aria-label="Fechar menu">×</button>
+    <a href="#inicio" onclick="toggleMenu()">Início</a>
+    <a href="massoterapia.html" onclick="toggleMenu()">Massoterapia</a>
+    <a href="holisticas.html" onclick="toggleMenu()">Terapias Holísticas</a>
+    <a href="#historia" onclick="toggleMenu()">Sobre</a>
+    <a href="#contato" onclick="toggleMenu()">Contato</a>
+    <a href="https://wa.me/5548984040426" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Agendar sessão</a>
+  </div>
+
+  <!-- HERO (sem header fixo) -->
+  <section class="hero" id="inicio">
+    <!-- Hamburger flutuante para mobile -->
+    <button class="hero-ham" onclick="toggleMenu()" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="hero-content">
+      <img src="assets/logo.svg" alt="Espaço Sprada" class="logo-mark">
+      <h1><strong>Equilíbrio</strong> do corpo,<br>mente e espírito.</h1>
+      <p class="hero-sub">
+        No <span class="hero-sub-brand">Espaço Sprada</span>, você encontra massoterapia e terapias holísticas personalizadas para aliviar tensões, combater o estresse e restaurar o seu bem-estar — em São José/SC.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5548984040426" target="_blank" rel="noopener" class="btn btn-primary">Agende uma sessão</a>
+        <span class="hero-note">Segunda a sexta · 7h às 23h · Barreiros, São José/SC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro-strip">
+    <div class="container">
+      <div class="intro-stamp-wrap reveal-item" data-reveal="left">
+        <img src="assets/stamp-txt.svg" alt="" class="intro-stamp-spin" aria-hidden="true">
+        <img src="assets/stamp-iso.svg" alt="Espaço Sprada" class="intro-stamp-iso">
+      </div>
+      <div class="intro-text reveal-item" data-reveal="right">
+        <h2>Terapias que promovem <strong>bem-estar</strong> e leveza</h2>
+        <p>Desde 2006 cuidando de corpos, emoções e histórias. A Sprada é o lugar onde você encontra alívio, reequilíbrio e renovação — do corpo à alma.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSA HISTÓRIA -->
+  <section class="historia" id="historia">
+    <div class="container">
+      <div class="historia-img reveal-item" data-reveal="left">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span>Foto do espaço em breve</span>
+      </div>
+      <div class="historia-text reveal-item" data-reveal="right">
+        <span class="label">Nossa História</span>
+        <h2>Um espaço criado com<br>amor e vocação</h2>
+        <p>
+          A Sprada reúne duas vocações: <strong>Jurema Terezinha Sprada</strong>, terapeuta holística desde 2006, e <strong>Samayne Sprada da Rocha</strong>, massoterapeuta desde 2014 — profissionais que transformaram o cuidado em arte e criaram um espaço aconchegante onde cada pessoa é acolhida em sua singularidade.
+        </p>
+        <p>
+          Nosso propósito é tornar a sua vida mais leve — fortalecendo a autoestima, o amor próprio e as relações interpessoais, e combatendo estresse, ansiedade, insônia, tensões e vícios.
+        </p>
+        <div class="historia-actions">
+          <a href="#contato" class="btn btn-primary">Agendar sessão</a>
+          <a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener" class="historia-instagram">@massoterapiaeterapiassprada</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRATAMENTOS -->
+  <section class="tratamentos" id="tratamentos">
+    <div class="container">
+      <div class="section-header reveal-item" data-reveal="up">
+        <span class="label">O que oferecemos</span>
+        <h2>Nossos tratamentos</h2>
+        <p>Duas áreas de cuidado complementares, cada uma com especialista dedicada para atender você com excelência.</p>
+      </div>
+      <div class="trat-list">
+
+        <!-- Massoterapia -->
+        <div class="trat-row reveal-item" data-reveal="left">
+          <div class="trat-row-img">
+            <span>Imagem em breve</span>
+          </div>
+          <div class="trat-row-body">
+            <h3>Massoterapia</h3>
+            <p class="trat-sub">Cuidado que começa na pele e vai até a alma</p>
+            <p>Com 8 anos de experiência, Samayne Sprada da Rocha aplica 16 técnicas — da Massagem Relaxante ao Dry Needling — para aliviar dores, tratar tensões e devolver vitalidade ao seu corpo. Cada sessão é planejada de acordo com a sua necessidade.</p>
+            <span class="trat-terapeuta">com Samayne Sprada da Rocha</span>
+            <a href="massoterapia.html" class="btn btn-primary">Ver todas as técnicas →</a>
+          </div>
+        </div>
+
+        <!-- Terapias Holísticas -->
+        <div class="trat-row reveal-item" data-reveal="right">
+          <div class="trat-row-img">
+            <span>Imagem em breve</span>
+          </div>
+          <div class="trat-row-body">
+            <h3>Terapias Holísticas</h3>
+            <p class="trat-sub">Equilíbrio que vai além do corpo</p>
+            <p>Com 20 anos de prática, Jurema Terezinha Sprada trabalha o ser humano em sua totalidade — Reiki, Constelação Familiar, ThetaHealing, Barras de Access e muito mais. Terapias que transformam padrões, liberam traumas e reestabelecem a harmonia interior.</p>
+            <span class="trat-terapeuta">com Jurema Terezinha Sprada</span>
+            <a href="holisticas.html" class="btn btn-primary">Ver todas as terapias →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="depoimentos-inner">
+      <div class="depoimentos-header reveal-item" data-reveal="up">
+        <span class="depoimentos-tagline">O que dizem nossos clientes</span>
+        <h2 class="depoimentos-title">Experiências que <strong>transformam</strong></h2>
+      </div>
+
+      <div class="dep-carousel">
+        <button class="dep-btn dep-btn--prev" aria-label="Anterior">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/><path d="M27 16l-8 8 8 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dep-viewport">
+          <div class="dep-track">
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">MS</div>
+                <div>
+                  <strong class="dep-name">Maria Santos</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">Encontrei no Espaço Sprada um lugar de verdadeiro acolhimento. A Samayne é incrível — cheguei com muita tensão nas costas e saí completamente renovada. Voltei três vezes e cada sessão é melhor que a anterior.</p>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">AC</div>
+                <div>
+                  <strong class="dep-name">Ana Cristina</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">A Jurema mudou minha vida com a Constelação Familiar. Eu estava presa em padrões que não conseguia enxergar, e após a sessão senti uma leveza que não sentia há anos. Gratidão imensuriável.</p>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">RP</div>
+                <div>
+                  <strong class="dep-name">Roberto Pereira</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">Fui com dores crônicas no ombro que me impediam de dormir. Após 4 sessões de massoterapia com a Samayne, as dores reduziram 80%. Profissional extremamente qualificada e atenciosa. Recomendo!</p>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">LF</div>
+                <div>
+                  <strong class="dep-name">Luísa Ferreira</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">O Reiki com a Jurema foi uma experiência profunda demais. Ela tem uma sensibilidade rara e um amor genuíno pelo que faz. Fui ansiosa e saí em paz. O espaço é aconchegante e te abraça desde que entra.</p>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">CM</div>
+                <div>
+                  <strong class="dep-name">Camila Moraes</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">Estava com muita ansiedade e insônia. Fiz sessões de ThetaHealing e Barras de Access com a Jurema — resultado imediato. Durmo muito melhor e minha cabeça está mais leve. Lugar mágico, profissionais incríveis.</p>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-header">
+                <div class="dep-avatar">TO</div>
+                <div>
+                  <strong class="dep-name">Thiago Oliveira</strong>
+                  <span class="dep-label">Cliente</span>
+                </div>
+              </div>
+              <div class="dep-stars">
+                <span class="dep-stars-icons">★★★★★</span>
+                <span class="dep-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="dep-text">Nunca tinha feito massagem antes. Fui indicado por um amigo e fiquei maravilhado. A Samayne identificou os pontos de tensão sem eu precisar falar nada. Saí como se tivesse dormido 12 horas. Voltarei sempre!</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="dep-btn dep-btn--next" aria-label="Próximo">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/><path d="M21 16l8 8-8 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="dep-dots" id="depDots"></div>
+
+      <div class="dep-footer">
+        <div class="dep-divider"></div>
+        <div class="dep-cta-row reveal-item" data-reveal="up">
+          <p class="dep-cta-text">Sua vez de se sentir<br><strong>assim também.</strong></p>
+          <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão." target="_blank" rel="noopener" class="btn-cta">Agendar sessão</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container faq-inner">
+      <div class="faq-header reveal-item" data-reveal="up">
+        <span class="faq-tagline">Perguntas frequentes</span>
+        <h2 class="faq-title">Ainda com dúvidas?</h2>
+        <p class="faq-subtitle">Confira as principais perguntas sobre massoterapia, terapias holísticas e o funcionamento do nosso espaço.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <article class="faq-item is-open reveal-item" data-reveal="up">
+          <button class="faq-question" type="button" aria-expanded="true">
+            <span>Como faço para agendar uma sessão?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 8.5L11 14L16.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>O agendamento é feito diretamente pelo WhatsApp com a terapeuta responsável. Para massoterapia, fale com a Samayne: (48) 98404-0426. Para terapias holísticas, fale com a Jurema: (48) 99902-6647. Atendemos de segunda a sexta, das 7h às 23h, mediante agendamento prévio.</p>
+          </div>
+        </article>
+
+        <article class="faq-item reveal-item" data-reveal="up" style="--reveal-delay:60ms">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Quanto tempo dura uma sessão?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 8.5L11 14L16.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>A duração varia conforme a técnica escolhida. As massagens costumam durar entre 50 e 90 minutos. As terapias holísticas variam de 60 a 120 minutos. Na consulta pelo WhatsApp, a terapeuta orienta sobre o tempo ideal para a sua necessidade.</p>
+          </div>
+        </article>
+
+        <article class="faq-item reveal-item" data-reveal="up" style="--reveal-delay:120ms">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Com o que devo me preocupar antes da sessão?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 8.5L11 14L16.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Venha com roupas confortáveis, evite refeições pesadas na hora anterior e esteja aberto(a) para relaxar. Para as terapias holísticas, não é necessário nenhuma preparação especial — a terapeuta orientará tudo no início da sessão. Traga uma intenção ou questão que queira trabalhar, se desejar.</p>
+          </div>
+        </article>
+
+        <article class="faq-item reveal-item" data-reveal="up" style="--reveal-delay:180ms">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>As terapias holísticas têm comprovação científica?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 8.5L11 14L16.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Muitas práticas holísticas são reconhecidas pela OMS e pelo Ministério da Saúde como Práticas Integrativas e Complementares em Saúde (PICS). Elas atuam como complemento — e não substituição — ao tratamento médico convencional, promovendo bem-estar emocional, mental e físico de forma integral.</p>
+          </div>
+        </article>
+
+        <article class="faq-item reveal-item" data-reveal="up" style="--reveal-delay:240ms">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Posso combinar massoterapia e terapias holísticas?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 8.5L11 14L16.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Muitos clientes combinam os dois tipos de atendimento e relatam resultados ainda mais profundos. A massoterapia trabalha o corpo físico enquanto as terapias holísticas atuam nas dimensões emocional, mental e energética. Juntas, promovem um cuidado verdadeiramente integrado.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="faq-footer-row reveal-item" data-reveal="up">
+        <a href="https://wa.me/5548984040426?text=Olá!%20Tenho%20uma%20dúvida%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20sessões." target="_blank" rel="noopener" class="btn-cta">Falar com a equipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO / CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header reveal-item" data-reveal="up">
+        <span class="label">Agende sua sessão</span>
+        <h2>Pronto para viver mais leve?</h2>
+        <p>Escolha a especialidade e entre em contato diretamente com a terapeuta responsável.</p>
+      </div>
+
+      <div class="contato-grid">
+        <div class="agend-card reveal-item" data-reveal="left">
+          <div class="agend-icon">💆</div>
+          <h3>Massoterapia</h3>
+          <p class="agend-sub">com Samayne Sprada da Rocha</p>
+          <p class="agend-tel">(48) 98404-0426</p>
+          <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20massoterapia." target="_blank" rel="noopener" class="btn btn-white">
+            Agendar via WhatsApp
+          </a>
+        </div>
+        <div class="agend-card reveal-item" data-reveal="right">
+          <div class="agend-icon">🌿</div>
+          <h3>Terapias Holísticas</h3>
+          <p class="agend-sub">com Jurema Terezinha Sprada</p>
+          <p class="agend-tel">(48) 99902-6647</p>
+          <a href="https://wa.me/5548999026647?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20holística." target="_blank" rel="noopener" class="btn btn-white">
+            Agendar via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contato-info reveal-item" data-reveal="up">
+        <div class="info-block">
+          <h4>Localização e contato</h4>
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <span>Rua Santo Antônio, 108 — Barreiros<br>São José/SC · CEP 88117-351</span>
+          </div>
+          <div class="info-item">
+            <span class="icon">📧</span>
+            <a href="mailto:spradaterapias@gmail.com">spradaterapias@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span class="icon">📱</span>
+            <a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener">@massoterapiaeterapiassprada</a>
+          </div>
+          <div class="info-item">
+            <span class="icon">🗓️</span>
+            <span>Segunda a sexta · 7h às 23h<br>(mediante agendamento)</span>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe
+            title="Localização Espaço Sprada"
+            src="https://www.google.com/maps?q=Rua+Santo+Ant%C3%B4nio,+108,+Barreiros,+S%C3%A3o+Jos%C3%A9,+SC&z=17&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Espaço Sprada">
+          <p>Massoterapia e Terapias Holísticas em São José/SC. Um espaço criado com amor para cuidar do seu corpo, mente e espírito.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="massoterapia.html">Massoterapia</a></li>
+            <li><a href="holisticas.html">Terapias Holísticas</a></li>
+            <li><a href="#historia">Sobre o espaço</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Redes sociais</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/massoterapiaeterapiasholisticas" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/5548984040426" target="_blank" rel="noopener">WhatsApp Massoterapia</a></li>
+            <li><a href="https://wa.me/5548999026647" target="_blank" rel="noopener">WhatsApp Holísticas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Sprada Massoterapia e Terapias Holísticas. Todos os direitos reservados.</span>
+        <a href="https://samuelxavier.com.br" target="_blank" rel="noopener">Desenvolvido por Samuel</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5548984040426" target="_blank" rel="noopener" class="wpp-float" aria-label="Fale pelo WhatsApp">
+    <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M47.4216 9.51921C42.4222 4.51401 35.7735 1.75635 28.6904 1.75342C14.0949 1.75342 2.21626 13.6317 2.21039 28.2311C2.20844 32.8981 3.42761 37.4539 5.74495 41.4695L1.98828 55.1909L16.0257 51.5086C19.8936 53.6185 24.2481 54.7304 28.6796 54.7317H28.6907C43.2846 54.7317 55.1645 42.8524 55.1701 28.2523C55.173 21.1767 52.4212 14.5241 47.4216 9.51921ZM28.6904 50.2598H28.6813C24.7322 50.2581 20.8591 49.1968 17.4794 47.1919L16.6761 46.7148L8.34605 48.9L10.5695 40.7784L10.046 39.9457C7.84279 36.4415 6.67939 32.3913 6.68135 28.2328C6.68592 16.0981 16.5593 6.22568 28.6992 6.22568C34.5779 6.22763 40.1039 8.51986 44.2592 12.68C48.4144 16.8401 50.7014 22.3698 50.6994 28.2507C50.6942 40.3863 40.8215 50.2598 28.6904 50.2598ZM40.7628 33.7761C40.1013 33.4448 36.8482 31.8446 36.2416 31.6235C35.6356 31.4027 35.194 31.2928 34.7533 31.9549C34.312 32.617 33.0443 34.1075 32.6581 34.5488C32.2719 34.9904 31.8864 35.0459 31.2246 34.7145C30.5629 34.3834 28.4311 33.6845 25.9037 31.4304C23.937 29.676 22.6092 27.5094 22.223 26.8473C21.8375 26.1845 22.2198 25.861 22.5133 25.497C23.2296 24.6075 23.9468 23.6751 24.1673 23.2338C24.3881 22.7922 24.2775 22.4057 24.1118 22.0746C23.9468 21.7436 22.6236 18.4869 22.0724 17.1617C21.5348 15.8721 20.9898 16.0463 20.5834 16.026C20.1979 16.0068 19.7566 16.0029 19.3154 16.0029C18.8744 16.0029 18.1575 16.1682 17.5508 16.831C16.9445 17.4934 15.2355 19.0939 15.2355 22.3505C15.2355 25.6072 17.6063 28.7533 17.937 29.1949C18.2677 29.6365 22.6027 36.3195 29.2396 39.1851C30.8182 39.8674 32.0505 40.2741 33.0116 40.5791C34.5968 41.0827 36.0387 41.0116 37.1789 40.8413C38.4503 40.6512 41.0932 39.2406 41.645 37.6952C42.1962 36.1496 42.1962 34.825 42.0305 34.5488C41.8655 34.2729 41.4242 34.1075 40.7628 33.7761Z" fill="white"/>
+    </svg>
+  </a>
+
+  <script>
+    /* Mobile menu */
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    /* Scroll reveal — suporta .reveal e .reveal-item */
+    var allReveal = document.querySelectorAll('.reveal, .reveal-item');
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    allReveal.forEach(function (el) { revealObserver.observe(el); });
+
+    function revealNearBottom() {
+      var scrollBottom = window.scrollY + window.innerHeight;
+      var docHeight = document.documentElement.scrollHeight;
+      if (docHeight - scrollBottom < 80) {
+        allReveal.forEach(function (el) {
+          if (!el.classList.contains('is-visible')) {
+            el.classList.add('is-visible');
+            revealObserver.unobserve(el);
+          }
+        });
+      }
+    }
+    window.addEventListener('scroll', revealNearBottom, { passive: true });
+    revealNearBottom();
+
+    /* FAQ accordion */
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.faq-item.is-open').forEach(function (el) {
+          el.classList.remove('is-open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    /* Depoimentos carousel */
+    (function () {
+      var track = document.querySelector('.dep-track');
+      if (!track) return;
+      var origCards = Array.from(track.querySelectorAll('.dep-card')).map(function (c) { return c.cloneNode(true); });
+      var viewport  = track.closest('.dep-viewport');
+      var dots      = document.getElementById('depDots');
+      var prevBtn   = document.querySelector('.dep-btn--prev');
+      var nextBtn   = document.querySelector('.dep-btn--next');
+      var total     = origCards.length;
+      var perView   = 3;
+      var gap       = 24;
+      var current   = 0;
+      var virtualIdx = 0;
+      var cloneCount = 0;
+      var cardW     = 0;
+      var rendered  = [];
+      var pageStops = [];
+      var autoId    = null;
+      var ms        = 420;
+
+      function getPV() { var w = window.innerWidth; return w <= 680 ? 1 : w <= 1024 ? 2 : 3; }
+      function norm(i) { return ((i % total) + total) % total; }
+      function rebuild() {
+        track.innerHTML = '';
+        origCards.slice(total - cloneCount).forEach(function (c) { track.appendChild(c.cloneNode(true)); });
+        origCards.forEach(function (c) { track.appendChild(c.cloneNode(true)); });
+        origCards.slice(0, cloneCount).forEach(function (c) { track.appendChild(c.cloneNode(true)); });
+        rendered = Array.from(track.querySelectorAll('.dep-card'));
+      }
+      function buildStops() {
+        var max = Math.max(0, total - perView); pageStops = [];
+        for (var i = 0; i <= max; i += perView) pageStops.push(i);
+        if (pageStops[pageStops.length - 1] !== max) pageStops.push(max);
+      }
+      function renderDots() {
+        if (!dots) return; dots.innerHTML = '';
+        pageStops.forEach(function (stop, idx) {
+          var d = document.createElement('button');
+          d.type = 'button'; d.className = 'dep-dot';
+          d.setAttribute('aria-label', 'Grupo ' + (idx + 1));
+          d.addEventListener('click', function () { goTo(stop); restartAP(); });
+          dots.appendChild(d);
+        });
+      }
+      function updDots() {
+        if (!dots) return;
+        var ds = Array.from(dots.querySelectorAll('.dep-dot')), ai = 0;
+        pageStops.forEach(function (s, i) { if (current >= s) ai = i; });
+        ds.forEach(function (d, i) { d.classList.toggle('active', i === ai); });
+      }
+      function applyTrans(animate) {
+        track.style.transition = animate === false ? 'none' : 'transform ' + ms + 'ms cubic-bezier(0.4,0,0.2,1)';
+        track.style.transform  = 'translateX(-' + (virtualIdx * (cardW + gap)) + 'px)';
+      }
+      function snap() { virtualIdx = current + cloneCount; applyTrans(false); }
+      function init() {
+        perView    = Math.min(getPV(), total);
+        cloneCount = Math.min(perView, total);
+        current    = norm(current);
+        rebuild();
+        cardW = (viewport.offsetWidth - gap * (perView - 1)) / perView;
+        rendered.forEach(function (c) { c.style.width = cardW + 'px'; c.style.flex = '0 0 ' + cardW + 'px'; });
+        buildStops(); renderDots(); snap(); updDots(); startAP();
+      }
+      function goTo(idx) { current = norm(idx); virtualIdx = current + cloneCount; applyTrans(true); updDots(); }
+      function step(d)   { current = norm(current + d); virtualIdx += d; applyTrans(true); updDots(); }
+      function stopAP()  { if (autoId) { clearInterval(autoId); autoId = null; } }
+      function startAP() { if (total <= perView) return; stopAP(); autoId = setInterval(function () { step(1); }, 6000); }
+      function restartAP() { startAP(); }
+
+      prevBtn.addEventListener('click', function () { step(-1); restartAP(); });
+      nextBtn.addEventListener('click', function () { step(1);  restartAP(); });
+      track.addEventListener('transitionend', function () {
+        if (virtualIdx < cloneCount || virtualIdx >= total + cloneCount) snap();
+      });
+      track.addEventListener('mouseenter', stopAP);
+      track.addEventListener('mouseleave', startAP);
+      window.addEventListener('resize', init);
+      init();
+    })();
+  </script>
+</body>
+</html>
