@@ -538,11 +538,12 @@ ul { list-style: none; }
 .trat-list {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 0;
 }
 .trat-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 80px 0;
   gap: 64px;
   align-items: center;
 }
@@ -925,8 +926,7 @@ ul { list-style: none; }
   .historia .container { grid-template-columns: 1fr; gap: 36px; }
   .historia-img { aspect-ratio: 16/9; }
 
-  .trat-list { gap: 52px; }
-  .trat-row { grid-template-columns: 1fr; gap: 32px; }
+  .trat-row { grid-template-columns: 1fr; gap: 32px; padding: 48px 0; }
 
   .contato-grid { grid-template-columns: 1fr; gap: 24px; }
   .contato-info { grid-template-columns: 1fr; gap: 32px; }
