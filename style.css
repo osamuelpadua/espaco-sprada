@@ -259,10 +259,10 @@ ul { list-style: none; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 .nav-links a {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--dark);
   letter-spacing: 0.02em;
@@ -297,7 +297,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--dark);
   letter-spacing: 0.02em;
@@ -339,7 +339,7 @@ ul { list-style: none; }
 .nav-dropdown-menu li a {
   display: block;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--dark);
   white-space: nowrap;
