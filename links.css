@@ -177,6 +177,23 @@ body::before {
   text-decoration: none;
 }
 .links-footer a:hover { color: rgba(255,255,255,0.70); }
+.links-credit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.links-credit span {
+  color: rgba(255,255,255,0.70);
+  font-size: 10px;
+  line-height: 1.4;
+}
+.links-credit-logo {
+  display: block;
+  width: auto;
+  height: 20px;
+}
 
 @media (max-width: 480px) {
   body { padding: 36px 16px 32px; }
