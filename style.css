@@ -68,6 +68,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   gap: 8px;
+  white-space: nowrap;
   position: relative;
   overflow: hidden;
   background: var(--brand-gradient);
@@ -175,6 +176,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   gap: 8px;
+  white-space: nowrap;
   background: var(--brand-gradient);
   overflow: hidden;
   position: relative;
