@@ -137,6 +137,18 @@
           </div>
         </div>
 
+        <!-- Divisor -->
+        <div class="trat-divider" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C16 4 13 9 13 13C13 14.657 14.343 16 16 16C17.657 16 19 14.657 19 13C19 9 16 4 16 4Z" fill="currentColor"/>
+            <path d="M8 9C8 9 5 13 5 16C5 17.657 6.343 19 8 19C9.657 19 11 17.657 11 16C11 13 9 10.5 8 9Z" fill="currentColor"/>
+            <path d="M24 9C24 9 27 13 27 16C27 17.657 25.657 19 24 19C22.343 19 21 17.657 21 16C21 13 23 10.5 24 9Z" fill="currentColor"/>
+            <path d="M16 16C16 16 13 20 13 22.5C13 24.433 14.343 26 16 26C17.657 26 19 24.433 19 22.5C19 20 16 16 16 16Z" fill="currentColor"/>
+            <path d="M11 16C11 16 8.5 18.5 7 18.5C5.5 18.5 4.5 17.5 5 16.5C5.5 15.5 8 14.5 11 16Z" fill="currentColor" opacity="0.5"/>
+            <path d="M21 16C21 16 23.5 18.5 25 18.5C26.5 18.5 27.5 17.5 27 16.5C26.5 15.5 24 14.5 21 16Z" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+
         <!-- Terapias Holísticas -->
         <div class="trat-row reveal-item" data-reveal="right">
           <div class="trat-row-img">
@@ -361,54 +373,45 @@
   <!-- AGENDAMENTO / CONTATO -->
   <section class="contato" id="contato">
     <div class="container">
-      <div class="section-header reveal-item" data-reveal="up">
-        <span class="label">Agende sua sessão</span>
-        <h2>Pronto para viver mais leve?</h2>
-        <p>Escolha a especialidade e entre em contato diretamente com a terapeuta responsável.</p>
-      </div>
 
-      <div class="contato-grid">
-        <div class="agend-card reveal-item" data-reveal="left">
-          <div class="agend-icon">💆</div>
-          <h3>Massoterapia</h3>
-          <p class="agend-sub">com Samayne Sprada da Rocha</p>
-          <p class="agend-tel">(48) 98404-0426</p>
-          <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20massoterapia." target="_blank" rel="noopener" class="btn btn-white">
-            Agendar via WhatsApp
-          </a>
-        </div>
-        <div class="agend-card reveal-item" data-reveal="right">
-          <div class="agend-icon">🌿</div>
-          <h3>Terapias Holísticas</h3>
-          <p class="agend-sub">com Jurema Terezinha Sprada</p>
-          <p class="agend-tel">(48) 99902-6647</p>
-          <a href="https://wa.me/5548999026647?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20holística." target="_blank" rel="noopener" class="btn btn-white">
-            Agendar via WhatsApp
-          </a>
-        </div>
-      </div>
+      <div class="contato-layout">
 
-      <div class="contato-info reveal-item" data-reveal="up">
-        <div class="info-block">
-          <h4>Localização e contato</h4>
-          <div class="info-item">
-            <span class="icon">📍</span>
-            <span>Rua Santo Antônio, 108 — Barreiros<br>São José/SC · CEP 88117-351</span>
-          </div>
-          <div class="info-item">
-            <span class="icon">📧</span>
-            <a href="mailto:spradaterapias@gmail.com">spradaterapias@gmail.com</a>
-          </div>
-          <div class="info-item">
-            <span class="icon">📱</span>
-            <a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener">@massoterapiaeterapiassprada</a>
-          </div>
-          <div class="info-item">
-            <span class="icon">🗓️</span>
-            <span>Segunda a sexta · 7h às 23h<br>(mediante agendamento)</span>
+        <!-- Coluna esquerda: info + WhatsApp -->
+        <div class="contato-col reveal-item" data-reveal="left">
+          <span class="label">Agende sua sessão</span>
+          <h2>Pronto para viver<br>mais leve?</h2>
+
+          <dl class="info-list">
+            <div class="info-row">
+              <dt>Endereço</dt>
+              <dd>Rua Santo Antônio, 108 — Barreiros<br>São José/SC · CEP 88117-351</dd>
+            </div>
+            <div class="info-row">
+              <dt>Horário</dt>
+              <dd>Segunda a sexta · 7h às 23h</dd>
+            </div>
+            <div class="info-row">
+              <dt>Instagram</dt>
+              <dd><a href="https://www.instagram.com/massoterapiaeterapiassprada/" target="_blank" rel="noopener">@massoterapiaeterapiassprada</a></dd>
+            </div>
+            <div class="info-row">
+              <dt>E-mail</dt>
+              <dd><a href="mailto:spradaterapias@gmail.com">spradaterapias@gmail.com</a></dd>
+            </div>
+          </dl>
+
+          <div class="contato-wpp">
+            <a href="https://wa.me/5548984040426?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20massoterapia." target="_blank" rel="noopener" class="btn btn-white">
+              Massoterapia — WhatsApp
+            </a>
+            <a href="https://wa.me/5548999026647?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20holística." target="_blank" rel="noopener" class="btn btn-outline">
+              Terapias Holísticas — WhatsApp
+            </a>
           </div>
         </div>
-        <div class="map-embed">
+
+        <!-- Coluna direita: mapa -->
+        <div class="contato-map reveal-item" data-reveal="right">
           <iframe
             title="Localização Espaço Sprada"
             src="https://www.google.com/maps?q=Rua+Santo+Ant%C3%B4nio,+108,+Barreiros,+S%C3%A3o+Jos%C3%A9,+SC&z=17&output=embed"
@@ -416,6 +419,7 @@
             allowfullscreen>
           </iframe>
         </div>
+
       </div>
     </div>
   </section>
