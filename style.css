@@ -1260,7 +1260,7 @@ ul { list-style: none; }
   .trat-feature-list { grid-template-columns: 1fr; }
   .trat-row-panel { min-height: 320px; }
 
-  .contato-layout { grid-template-columns: 1fr; gap: 16px; }
+  .contato-layout { grid-template-columns: 1fr; gap: 16px; max-width: 480px; margin-left: auto; margin-right: auto; }
 
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
