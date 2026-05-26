@@ -330,12 +330,14 @@ body {
   display: block;
   height: 18px;
   width: auto;
-  opacity: 0.45;
-  transition: opacity 0.2s;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(190deg) brightness(0.45);
+  opacity: 0.55;
+  transition: opacity 0.2s, filter 0.2s;
 }
 
 .lk-footer-credit:hover .lk-footer-credit-logo {
-  opacity: 0.75;
+  opacity: 0.85;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(190deg) brightness(0.35);
 }
 
 /* ── RESPONSIVO ──────────────────────────────── */
